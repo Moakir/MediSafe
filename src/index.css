@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 新粗野主义风格基础样式 */
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  
+  /* 禁用平滑字体渲染，增强锐利感 */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-synthesis: none;
+  
+  /* 全局变量 */
+  --accent-yellow: #FFE066;
+  --accent-blue: #67E8F9;
+  --accent-green: #86EFAC;
+  --danger-red: #F87171;
+}
+
+/* 数字使用等宽字体 */
+.digital {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+/* 移除默认的按钮样式 */
+button {
+  font-family: inherit;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border: 1px solid #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border: 1px solid #fff;
+}
+
+/* 无模糊阴影工具类 */
+.shadow-brutal {
+  box-shadow: 6px 6px 0 0 #000;
+}
+
+.shadow-brutal-sm {
+  box-shadow: 3px 3px 0 0 #000;
+}
+
+.shadow-brutal-lg {
+  box-shadow: 10px 10px 0 0 #000;
+}
+
+/* 重置一些基础样式 */
+* {
+  box-sizing: border-box;
+}
